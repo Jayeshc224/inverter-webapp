@@ -3,7 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import ProfileIcon from "./ProfileIcon";
-// import { ThemeToggle } from "../theme-toggle";
+import { ThemeToggle } from "../theme-toggle";
 import { TabName } from "@/types/navigation";
 
 interface NavbarProps {
@@ -26,7 +26,7 @@ export function Navbar({ tabList, currentTab, onTabChange }: NavbarProps) {
           className="text-xl md:text-3xl font-bold"
           style={{ color: "var(--primary)" }}
         >
-          VKP Inverter
+          Solarix Inverter
         </h1>
       </Link>
       <div className="flex items-center gap-2 md:gap-4">
@@ -43,7 +43,7 @@ export function Navbar({ tabList, currentTab, onTabChange }: NavbarProps) {
             {tab}
           </button>
         ))}
-        {/* <ThemeToggle /> */}
+        <ThemeToggle />
         <ProfileIcon />
       </div>
     </nav>
